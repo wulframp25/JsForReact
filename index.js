@@ -1,9 +1,12 @@
-const name = 'laptop'
-const price = 3000
-
-const newProduct = {
-    name: name,
-    price: price,
+const user = {
+    name: 'joe',
+    age: 30
 }
 
-console.log(newProduct)
+function printInfo({age}){
+    return '<h1>Hola ' + age + '</h1>'
+}
+
+console.log(printInfo(user))
+
+document.body.innerHTML = printInfo(user)
